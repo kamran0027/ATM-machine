@@ -10,6 +10,35 @@ public class ACCOUNT {
        this.pin=pin;
    }
 
+    void showbalance(){
+        System.out.println("enter pin:");
+        int Pin= sc.nextInt();
+        if (Pin==this.pin){
+            System.out.println("Balance: "+this.bal);
+        }
+        else {
+            System.out.println("wrong pin...");
+        }
 
+    }
+
+    void Withdraw(){
+        System.out.println("enter ammount:");
+        float widamt=sc.nextInt();
+
+        System.out.println("enter pin:");
+        int Pin= sc.nextInt();
+
+        if (Pin==this.pin){
+            if (this.bal>widamt){
+                bal-=widamt;
+                System.out.println("Withdraw complete..");
+            }
+            else {
+                System.out.println("insuffician balance or wrong pin..");
+            }
+
+        }
+    }
 
 }
