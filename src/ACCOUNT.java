@@ -54,6 +54,31 @@ public class ACCOUNT {
         }
 
     }
+    void menu(){
+        System.out.println("enter choice");
+        System.out.println("1. show balance ");
+        System.out.println("2. withdraw ammount");
+        System.out.println("3. deposit money ");
+        System.out.println("4. exit");
+
+        int choice=sc.nextInt();
+
+        if (choice==1){
+            showbalance();
+        }
+        else if (choice==2) {
+            Withdraw();
+        }
+        else if (choice==3) {
+            deposite();
+        }
+        else if (choice==4) {
+            return;
+        }
+        else {
+            System.out.println("enter valid choice");
+        }
+    }
 
 
 }
