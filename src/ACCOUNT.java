@@ -41,4 +41,19 @@ public class ACCOUNT {
         }
     }
 
+    void deposite(){
+        System.out.println("enter pin:");
+        int Pin= sc.nextInt();
+        if (this.pin==Pin){
+            System.out.println("enter ammount:");
+            float amt=sc.nextInt();
+            this.bal+=amt;
+        }
+        else{
+            System.out.println("wrong pin..");
+        }
+
+    }
+
+
 }
