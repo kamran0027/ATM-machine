@@ -19,6 +19,7 @@ public class ACCOUNT {
         else {
             System.out.println("wrong pin...");
         }
+        menu();
 
     }
 
@@ -39,6 +40,7 @@ public class ACCOUNT {
             }
 
         }
+        menu();
     }
 
     void deposite(){
@@ -52,6 +54,7 @@ public class ACCOUNT {
         else{
             System.out.println("wrong pin..");
         }
+        menu();
 
     }
     void menu(){
